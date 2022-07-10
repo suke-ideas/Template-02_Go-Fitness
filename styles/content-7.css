@@ -1,9 +1,10 @@
 .content-7 {
-    height: 800px;
     display: flex;
     justify-content: center;
 
     padding: 80px 0;
+
+    background: rgb(252, 251, 255);
 }
 
 .content-7 .contact {
@@ -22,6 +23,17 @@
     margin: 10px 0;
 }
 
+.content-7 .contact a {
+    text-decoration: none;
+    margin: 5px;
+
+}
+
+.content-7 .contact i {
+    color: rgb(255, 88, 160);
+    font-size: 19px;
+}
+
 .content-7 .contact .tel-number {
     margin-bottom: 40px;
 }
@@ -31,11 +43,15 @@
     margin-left: 300px;
 }
 
+.content-7 .get-inform .get-name,
+.content-7 .get-inform .get-email {
+    display: flex;
+}
+
 .content-7 .form-contact input {
     width: 400px;
     height: 50px;
 
-    font-family: Poppins;
     font-size: 16px;
     color: rgb(56, 37, 92);
     font-weight: 300;
@@ -46,13 +62,26 @@
     margin-bottom: 20px;
 }
 
-.content-7 .form-contact .content-form input {
+.content-7 .form-contact .content-form textarea {
     height: 200px;
+    width: 100%;
     border-radius: 30px;
+
+    font-family: Poppins;
+    font-size: 16px;
+    padding-top: 16px;
+    padding-left: 16px;
+
+    border: 1px solid rgba(56, 37, 92, 0.3);
+
+    resize: none;
+
 }
 
 .content-7 .send-form-btn {
+    margin-top: 20px;
     display: flex;
+    flex-direction: column;
 }
 
 .content-7 .send-form-btn button {
