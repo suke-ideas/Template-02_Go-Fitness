@@ -229,8 +229,8 @@
 .content-5 .content-5-button_1,
 .content-5 .content-5-button_2,
 .content-5 .content-5-button_3 {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 
     margin-top: 32px;
     padding: 0 20px 50px;
