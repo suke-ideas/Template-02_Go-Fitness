@@ -85,7 +85,7 @@
 .footer .get-notified .logo-footer {
     width: 105px;
     height: 115px;
-    background: url("/assets/imgs/logo-1.png") center center / cover no-repeat;
+    background: url("../assets/imgs/logo-1.png") center center / cover no-repeat;
     animation: 1.5s cubic-bezier(0.23, 1, 0.32, 1) 0.1s 1 normal forwards running fadeInImg;
 }
 
