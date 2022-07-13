@@ -2,11 +2,9 @@
 
 const nav = document.getElementById('nav');
 // console.log(nav);
-window.onscroll = () => {
-    let pointX = window.scrollX;
+const showNavbar = () => {
     let pointY = window.scrollY;
 
-    // console.log(pointX, pointY);
     let img = nav.querySelector('img');
 
 
@@ -27,6 +25,7 @@ window.onscroll = () => {
         img.style.height = '78px';
     }
 }
+window.addEventListener('scroll', showNavbar);
 
 
 // 2. make animation: change content slider onclick button
@@ -170,17 +169,40 @@ dot2.addEventListener('click', handleSlider2);
 dot3.addEventListener('click', handleSlider3);
 
 
-// 4. Tạo hiệu ứng di chuyển các phần trong trang chậm
+// 4. make the transition slowly
 
 
-// 5. Tạo hiệu ứng khi nhấn vào nút send
+// 5. make animation when click the button send
 
-// 6. Tạo hiệu ứng khi nhấn vào nút get-notified
+// 6. make animation when click the get-notified button
 
-// 7. Tạo hiệu ứng xuất hiện nút di chuyển lên đầu trang khi lướt trang xuống 
+// 7. make appearance of top button when scroll down
+const buttonTop = document.querySelector('.button-top');
+
+const showButtonTop = () => {
+    let pointY = window.scrollY;
+
+    if (pointY > 300 ) {
+        // show Button on top
+        buttonTop.style.display = 'block';
+
+    } else {
+        // hide Button on top
+        buttonTop.style.display = 'none';
+    }
+}
+window.addEventListener('scroll', showButtonTop);
+
+
+
+
+
+
+
 
 // 8. form contact: 
-//   - tạo thông báo lỗi khi nhấn sai email
-//   - tạo thông báo lỗi khi nhấn nút send mà chưa nhập dữ liệu
+//   - make notified when enter wrong email
+//   - make notified error when click send without enter data
 
-// 9. thay đổi prevbutton với nextbutton để tạo hiệu ứng hover
+// 9. make animation for prevbutton and nextbutton on hover
+

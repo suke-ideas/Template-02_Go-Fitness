@@ -94,7 +94,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+    height: 80px;
+
     padding: 22px 200px;
     color: rgb(56, 37, 92);
 }
