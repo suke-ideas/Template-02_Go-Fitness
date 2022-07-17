@@ -15,7 +15,7 @@
     /* padding: 13px 13px; */
     box-shadow: rgb(56 37 92 / 15%) 0px 4px 8px;
 
-    animation: moveSlowly 2s linear;
+    animation: slowly 1.5s infinite alternate-reverse;
 
 }
 .button-top a {

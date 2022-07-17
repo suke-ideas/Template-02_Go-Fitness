@@ -12,7 +12,7 @@ const showNavbar = () => {
         
         nav.style.backgroundColor = 'rgb(56, 37, 92)';
         nav.style.height = '65px';
-
+        
         // change logo size
         img.style.width = '46px';
         img.style.height = '52px';
@@ -212,8 +212,65 @@ window.addEventListener('scroll', showButtonTop);
 //   - make notified when enter wrong email
 //   - make notified error when click send without enter data
 
-// 9. make animation for prevbutton and nextbutton on hover
+// 9. make animation for prevbutton and nextbutton on hover (done)
 
-// 10. change the scrollbar
+// 10. change the scrollbar (done)
+
+// 11. change the content of content 6 
+const content1 = "I’m taking personal training sessions at GO zone with Adrienne since December 2021. I really enjoy my sessions and I like the variety of exercises. Adrienne always asks me when I book my next session what I want to work on and tailors the session to accommodate. Since I have been training with her, I can really see an improvement in my upper body strength. I can now do full press up and when working in the gym on my own I lift much heavier weights than when I started. My overall fitness has improved and I feel confident to do exercises I wouldn’t have tried before."
+const content2 = "I started my yoga classes a year ago to reduce work related stress. Cindy and her yoga sessions helped me a lot to get through my tough times. The classes are so peaceful, and we get to practice various breathing techniques, stretches and advanced poses. Cindy provides options for poses, so each of us can choose the pose based on our flexibility and comfort level, so you don't need to have any experience in yoga when joining the sessions. I have definitely gained more flexibility. I strongly recommend GO yoga for anyone, at any flexibility level."
+const content3 = "I completed my 200th workout last night and felt like I had just climbed the Mountain  Everest! My work is far from over, but I know I will reach my ultimate goal! After every workout, I feel like I want to exercise more consistently. Curves make it so easy to get the strength training I know I need. The changes on my body shapes are so great! I’m happy. I’m more confident. I have lots of energy again. Furthermore, I walk and play with my children with my full potential."
+const content4 = "Verica’s personal training has helped me to learn new techniques and exercises that I combine to create a gym routine that I can do in my own time. Verica really takes into considering my needs, helps me to improve problem areas whilst making me feel comfortable and improving my confidence. I really look forward to my next workouts with Verica as I know I will learn new techniques every time. Thank you for helping me to reach my full potential! I'll recommend GO fitness to all my besties."
+
+const author1 = "Mila Fenez / Personal trainings with Adrienne"
+const author2 = "Lucia Cellotti / Yoga & stretching sessions"
+const author3 = "Paula Zicker / Group fitness trainings"
+const author4 = "Jane Simson / Personal trainings with Verica"
+
+const content_6 = document.querySelector('.content-6-description');
+const author = content_6.getElementsByTagName('h2')[0];
+const content = content_6.getElementsByTagName('p')[0];
+// console.log(author, content)
+
+const dot1_content6 = content_6.querySelector('.dot-1');
+const dot2_content6 = content_6.querySelector('.dot-2');
+const dot3_content6 = content_6.querySelector('.dot-3');
+const dot4_content6 = content_6.querySelector('.dot-4');
+
+dot1_content6.addEventListener('click', () => {
+    content.innerText = content1;
+    author.innerText = author1;
+    dot1_content6.style.background = 'linear-gradient(0deg, rgb(255, 88, 160), rgb(255, 202, 104))';
+    dot2_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+    dot3_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+    dot4_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+});
+
+dot2_content6.addEventListener('click', () => {
+    content.innerText = content2;
+    author.innerText = author2;
+    dot2_content6.style.background = 'linear-gradient(0deg, rgb(255, 88, 160), rgb(255, 202, 104))';
+    dot1_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+    dot3_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+    dot4_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+});
+
+dot3_content6.addEventListener('click', () => { 
+    content.innerText = content3;
+    author.innerText = author3;
+    dot3_content6.style.background = 'linear-gradient(0deg, rgb(255, 88, 160), rgb(255, 202, 104))';
+    dot1_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+    dot2_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+    dot4_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+});
+
+dot4_content6.addEventListener('click', () => {
+    content.innerText = content4;
+    author.innerText = author4;
+    dot4_content6.style.background = 'linear-gradient(0deg, rgb(255, 88, 160), rgb(255, 202, 104))';
+    dot1_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+    dot2_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+    dot3_content6.style.background = 'rgba(56, 37, 92, 0.5)';
+});
 
 

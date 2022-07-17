@@ -2,6 +2,7 @@
 @import './nav.css';
 @import './slider.css';
 @import './footer.css';
+@import './keyframes.css';
 
 @import 'content-1.css';
 @import 'content-2.css';
@@ -11,3 +12,4 @@
 @import 'content-6.css';
 @import 'content-7.css';
 @import 'button-top.css';
+

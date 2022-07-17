@@ -82,6 +82,10 @@
     margin-left: -50px;
 }
 
+.footer .get-notified button:hover {
+    background: rgb(255, 202, 104);
+}
+
 .footer .get-notified .logo-footer {
     width: 105px;
     height: 115px;

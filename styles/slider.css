@@ -122,8 +122,17 @@
     margin-right: -150px;
 }
 
+.prev-button:hover{
+    animation: hoverPrevButton 1s forwards; 
+
+}
+
 .next-button {
     margin-left: -150px;
     margin-right: 150px;
+}
+
+.next-button:hover {
+    animation: hoverNextButton 1s forwards;
 }
 

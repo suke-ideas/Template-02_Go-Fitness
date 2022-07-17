@@ -95,4 +95,11 @@
 
     align-self: flex-end;
 
+    color: #fff;
+
+}
+
+.content-7 .send-form-btn button:hover {
+    background: rgb(255, 202, 104);
+    
 }
