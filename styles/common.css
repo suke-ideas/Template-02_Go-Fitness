@@ -28,3 +28,20 @@ a {
     color: #fff;
 }
 
+html ::-webkit-scrollbar {
+    width: 10px;
+    height: 100%;
+}
+
+html ::-webkit-scrollbar-track {
+    background-image: linear-gradient(135deg, rgb(27, 138, 105) 5%, rgb(133, 45, 86) 90%);
+    border: 1px solid rgb(216, 213, 44);
+    border-radius: 20px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background-color: rgb(175, 125, 49);
+    border: 1px solid rgb(136, 180, 54);
+    border-radius: 25%;
+
+}
