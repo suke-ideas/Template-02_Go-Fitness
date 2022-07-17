@@ -174,7 +174,15 @@ dot3.addEventListener('click', handleSlider3);
 
 // 5. make animation when click the button send
 
+
+
+
+
+
 // 6. make animation when click the get-notified button
+
+
+
 
 // 7. make appearance of top button when scroll down
 const buttonTop = document.querySelector('.button-top');
@@ -205,4 +213,7 @@ window.addEventListener('scroll', showButtonTop);
 //   - make notified error when click send without enter data
 
 // 9. make animation for prevbutton and nextbutton on hover
+
+// 10. change the scrollbar
+
 
