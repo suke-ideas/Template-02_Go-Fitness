@@ -67,7 +67,7 @@ const handleSlider1 = () => {
     console.log("slider 1");
     
     // change backround and add css
-    slider.style.background = "url('../assets/imgs/slide1.jpg')";
+    slider.style.background = "url(../assets/imgs/slide1.jpg)";
     slider.style.backgroundRepeat = 'no-repeat';
     slider.style.backgroundPosition = 'center';
     slider.style.backgroundSize = '100%';
@@ -87,7 +87,7 @@ const handleSlider2 = () => {
     console.log("silder 2");
     
     // change backround and add css
-    slider.style.background = "url('/assets/imgs/slide2.jpg')";
+    slider.style.background = "url(../assets/imgs/slide2.jpg)";
     slider.style.backgroundRepeat = 'no-repeat';
     slider.style.backgroundPosition = 'center';
     slider.style.backgroundSize = '100%';
@@ -107,7 +107,7 @@ const handleSlider3 = () => {
     console.log("slider 3");
     
     // change backround and add css
-    slider.style.background = "url('/assets/imgs/slide3.jpg')";
+    slider.style.background = "url(../assets/imgs/slide3.jpg)";
     slider.style.backgroundRepeat = 'no-repeat';
     slider.style.backgroundPosition = 'center';
     slider.style.backgroundSize = '100%';
