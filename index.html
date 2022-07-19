@@ -469,12 +469,22 @@
                 <form>
                     <div class="get-inform">
                         <div class="get-name">
-                            <input type = "text" placeholder = "Your name*" />
+                            <input class = "your-name" type = "text" placeholder = "Your name*" />
                             <div style = "font-weight: 598; font-size: 19px; margin-top: 16px; margin-left: -32px;">*</div>
+                            <div class="alert-empty_inputName">
+                                <i class="ti-alert">
+                                    This field cannot be empty
+                                </i>
+                            </div>
                         </div>
                         <div class="get-email">
-                            <input type = 'text' placeholder="Your Email*" />
+                            <input class = "your-email" type = 'text' placeholder="Your Email*" />
                             <div style = "font-weight: 598; font-size: 19px; margin-top: 16px; margin-left: -32px;">*</div>
+                            <div class="alert-empty_inputEmail">
+                                <i class="ti-alert">
+                                    This field cannot be empty
+                                </i>
+                            </div>
                         </div>
                         <div class="content-form">
                             <!-- <input type = "box" style="" placeholder="Training you want to join..." /> -->
@@ -482,7 +492,7 @@
                         </div>
                     </div>
                     <div class="send-form-btn">
-                        <button type="submit">Send</button>
+                        <button class = 'send-button' >Send</button>
                     </div>
                 </form>
             </div>

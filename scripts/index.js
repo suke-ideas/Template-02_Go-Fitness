@@ -172,8 +172,39 @@ dot3.addEventListener('click', handleSlider3);
 // 4. make the transition slowly
 
 
-// 5. make animation when click the button send
+// 5. make animation when click the button send (done)
+const formContact = document.querySelector('.form-contact');
+const sendButton = formContact.querySelector('.send-button');
 
+sendButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const yourName = formContact.querySelector('.your-name');
+    const yourEmail = formContact.querySelector('.your-email');
+
+    // check if the input of name is empty
+    if (yourName.value === '') {
+        yourName.style.border = '1px solid red';
+        const alertName = formContact.querySelector('.alert-empty_inputName');
+        alertName.style.display = 'block';
+    }
+    else {
+        yourName.style.border = '1px solid #ccc';
+        const alertName = formContact.querySelector('.alert-empty_inputName');
+        alertName.style.display = 'none';
+    }
+
+    // check if the input of email is empty
+    if (yourEmail.value === '') {
+        yourEmail.style.border = '1px solid red';
+        const alertEmail = formContact.querySelector('.alert-empty_inputEmail');
+        alertEmail.style.display = 'block';
+    } else {
+        yourEmail.style.border = '1px solid #ccc';
+        const alertEmail = formContact.querySelector('.alert-empty_inputEmail');
+        alertEmail.style.display = 'none';
+    }
+
+} )
 
 
 
@@ -211,6 +242,7 @@ window.addEventListener('scroll', showButtonTop);
 // 8. form contact: 
 //   - make notified when enter wrong email
 //   - make notified error when click send without enter data
+//   - make notified when enter wrong email
 
 // 9. make animation for prevbutton and nextbutton on hover (done)
 
@@ -236,6 +268,7 @@ const dot1_content6 = content_6.querySelector('.dot-1');
 const dot2_content6 = content_6.querySelector('.dot-2');
 const dot3_content6 = content_6.querySelector('.dot-3');
 const dot4_content6 = content_6.querySelector('.dot-4');
+console.log(dot1_content6, dot2_content6, dot3_content6, dot4_content6);
 
 dot1_content6.addEventListener('click', () => {
     content.innerText = content1;
@@ -274,3 +307,5 @@ dot4_content6.addEventListener('click', () => {
 });
 
 
+// 12. change background color of button onClick
+// button:active {} (done)

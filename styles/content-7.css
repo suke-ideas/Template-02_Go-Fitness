@@ -46,6 +46,7 @@
 .content-7 .get-inform .get-name,
 .content-7 .get-inform .get-email {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .content-7 .form-contact input {
@@ -102,4 +103,14 @@
 .content-7 .send-form-btn button:hover {
     background: rgb(255, 202, 104);
     
+}
+
+.content-7 .alert-empty_inputName,
+.content-7 .alert-empty_inputEmail {
+    color: red;
+    font-size: 14px;
+    margin-top: -18px;
+    margin-left: 4px;
+    display: none;
+
 }
