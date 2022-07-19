@@ -87,7 +87,7 @@ const handleSlider2 = () => {
     console.log("silder 2");
     
     // change backround and add css
-    slider.style.background = "url('../assets/imgs/slide2.jpg')";
+    slider.style.background = "url('/assets/imgs/slide2.jpg')";
     slider.style.backgroundRepeat = 'no-repeat';
     slider.style.backgroundPosition = 'center';
     slider.style.backgroundSize = '100%';
@@ -107,7 +107,7 @@ const handleSlider3 = () => {
     console.log("slider 3");
     
     // change backround and add css
-    slider.style.background = "url('../assets/imgs/slide3.jpg')";
+    slider.style.background = "url('/assets/imgs/slide3.jpg')";
     slider.style.backgroundRepeat = 'no-repeat';
     slider.style.backgroundPosition = 'center';
     slider.style.backgroundSize = '100%';
@@ -210,7 +210,22 @@ sendButton.addEventListener('click', (e) => {
 
 
 
-// 6. make animation when click the get-notified button
+// 6. make animation when click the get-notified button (done)
+const getNotifiedButton = document.querySelector('.get-notified-btn');
+const emailNotified = document.querySelector('.email-notified');
+getNotifiedButton.addEventListener('click', () => {
+    if (emailNotified.value === '') {
+        const footer = document.querySelector('.footer');
+        const alertEmail = footer.querySelector('.alert-empty_inputEmail');
+        alertEmail.style.display = 'block';
+        emailNotified.style.border = '1px solid red';
+    } else {
+        const footer = document.querySelector('.footer');
+        const alertEmail = footer.querySelector('.alert-empty_inputEmail');
+        alertEmail.style.display = 'none';
+        emailNotified.style.border = '1px solid #ccc';
+    }
+})
 
 
 

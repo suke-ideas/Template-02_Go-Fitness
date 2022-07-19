@@ -105,8 +105,8 @@
     
 }
 
-.content-7 .alert-empty_inputName,
-.content-7 .alert-empty_inputEmail {
+.alert-empty_inputName,
+.alert-empty_inputEmail {
     color: red;
     font-size: 14px;
     margin-top: -18px;
